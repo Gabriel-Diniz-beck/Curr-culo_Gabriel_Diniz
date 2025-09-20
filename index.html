@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página inicial</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Importando Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <!-- título -->
+    <div class="navbar">
+      <h1>Meu Currículo</h1>
+      <span class="menu-btn" onclick="openMenu()">☰</span>
+    </div>
+  
+    <!-- menu lateral -->
+    <div id="side-menu" class="side-menu">
+      <span class="close-btn" onclick="closeMenu()">×</span>
+      <a href="resumo.html">Resumo</a>
+      <a href="cursos.html">Artigos</a>
+      <a href="contato.html">Contato</a>
+      <a href="projetos.html">Projetos</a>
+    </div>
+  </header>
+
+  <section>
+    <div class="content">
+      <h2 id="resumo">Resumo</h2>
+      <p>Profissional de [sua área] com experiência em [detalhe]...</p>
+
+      <h2 id="cursos">Cursos</h2>
+      <ul>
+        <li>Curso de HTML e CSS - 2023</li>
+        <li>Curso de Python - 2022</li>
+      </ul>
+
+      <h2 id="diplomas">Diplomas</h2>
+      <p>Aqui você pode colocar a lista ou imagens dos diplomas.</p>
+
+      <h2 id="contato">Contato</h2>
+      <p>Email: voce@email.com | Telefone: (99) 99999-9999</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 Meu Currículo. Desenvolvido por Gabriel Diniz.</p>
+    <div class="social-icons">
+      <a href="https://wa.me/557998559547" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.linkedin.com/in/gabriel-diniz-92ab9b340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/gabriel_diniz_1?igsh=MmhidmpycnRlaDFh" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/seu_usuario" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="teeddfffff"target= '_blank'><i class="fab fa-tiktok"></i></a>
+      <a href="rrrrrrrrrr"target= '_blank'><i class="fab fa-discord"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    function openMenu() {
+      document.getElementById("side-menu").style.width = "250px";
+    }
+    function closeMenu() {
+      document.getElementById("side-menu").style.width = "0";
+    }
+  </script>
+</body>
+</html>
